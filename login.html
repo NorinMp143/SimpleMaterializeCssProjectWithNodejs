@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo"><i class="large material-icons">insert_chart</i>PWA</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="/"><i class="material-icons left">home</i>Home</a></li>
+            <li><a href="/signup"><i class="material-icons left">how_to_reg</i>Register</a></li>
+            <li><a href="/login"><i class="material-icons left">login</i>Login</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li class="active"><a href="/"><i class="material-icons left">home</i>Home</a></li>
+        <li><a href="/signup"><i class="material-icons left">how_to_reg</i>Register</a></li>
+        <li><a href="/login"><i class="material-icons left">login</i>Login</a></li>
+      </ul>
+
+      <section class="form">
+        <div class="row">
+            <form class="col s12 grey lighten-2" id="form1">
+                <div class="row">
+                    <div class="col s12">
+                        <h4 class="form-header">Login</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="contact" name="tel" type="number" data-length="10" class="validate">
+                        <label for="contact">Contact</label>
+                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" name="action" id="login">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+            <form class="col s12 grey lighten-2" id="form2" action="/verify" method="post">
+                <div class="row">
+                    <div class="col s12">
+                        <h4 class="form-header">Login</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">sms</i>
+                        <input id="otp" name="code" type="number" data-length="6" class="validate">
+                        <label for="otp">OTP</label>
+                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" id="sendotp" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </section>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="node_modules/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="js/material.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

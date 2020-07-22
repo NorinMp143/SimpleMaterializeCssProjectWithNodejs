@@ -1,0 +1,25 @@
+{
+  "name": "pwa",
+  "version": "1.0.0",
+  "description": "Create a PWA Login Flow Using OTP sent as a SMS",
+  "main": "index.html",
+  "scripts": {
+    "pretest": "eslint \"js/app.js\" \"config.js\" \"server.js\" --ignore-path .gitignore",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "lite": "lite-server"
+  },
+  "author": "Madan Lal",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-strongloop": "^2.1.0",
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "jquery-validation": "^1.19.2",
+    "sendotp": "^1.2.9",
+    "twilio": "^3.47.0"
+  }
+}
