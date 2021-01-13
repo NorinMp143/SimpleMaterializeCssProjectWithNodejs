@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "jquery-validation": "^1.19.2",
+    "jquery-validation": "^1.19.3",
     "lodash": "^4.17.19",
     "sendotp": "^1.2.9",
     "twilio": "^3.47.0"
